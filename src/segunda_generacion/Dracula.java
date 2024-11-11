@@ -11,6 +11,7 @@ public class Dracula extends Vampiro implements Murcielago, Constantes {
         super(nombre, edad);
     }
 
+
     void hipnotizar() {
         System.out.println("Venga q' no es pa' eso..");
     }
@@ -26,21 +27,18 @@ public class Dracula extends Vampiro implements Murcielago, Constantes {
         obj1.comerfutas();
 
         Vampiro obj2 = new Vampiro("Otto", 144);
-        //obj2.setNombre("Otto");
+        obj2.setNombre("Otto");
         obj2.morder();
         obj2.chuparSangre();
-        //obj2.aguantarSol();
-      if (DIA){
-          System.out.println(ERROR);
-      }
-
+        obj2.aguantarSol(); // Esto debería funcionar si el método es público o protegido y Vampiro tiene acceso a él.
+      
 
     }//end main
 
-    /*public Dracula(String nombre, int edad, int talla) {
+    public Dracula(String nombre, int edad, int talla) {
         super(nombre, edad);
         this.talla = talla;
-    }*/
+    }
 
         @Override
         public void volar () {
